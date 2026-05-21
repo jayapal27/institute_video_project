@@ -1,0 +1,163 @@
+/* Main Container */
+.user-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Form */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.user-form input,
+.user-form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Register Button */
+.register-btn {
+  padding: 10px;
+  background: #ffc107;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-btn:hover {
+  background: #e0a800;
+}
+
+/* Subject List */
+.subject-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.subject-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.subject-item input {
+  width: 16px;
+  height: 16px;
+}
+
+.subject-name {
+  font-size: 14px;
+}
+
+/* Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th {
+  background: #343a40;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.user-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table tr:hover {
+  background: #f5f5f5;
+}
+
+/* Buttons */
+.edit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #0069d9;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Box */
+.modal-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.update-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
